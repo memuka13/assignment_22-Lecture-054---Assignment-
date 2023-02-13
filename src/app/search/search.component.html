@@ -1,0 +1,20 @@
+<h1>Try to search person by name, surname or age.</h1>
+
+<p>Please enter key</p>
+
+<input
+  id="search"
+  type="text"
+  placeholder="Enter your text here"
+  [formControl]="search"
+/>
+
+<div class="listContaimer">
+  <div *ngFor="let item of list">
+    <div class="personContainer">
+      <div>{{ item.name }}</div>
+      <div>{{ item.surname }}</div>
+      <div>{{ item.age }}</div>
+    </div>
+  </div>
+</div>
